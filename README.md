@@ -55,3 +55,14 @@ toco \
   #--input_arrays=input \
   #--output_arrays=final_result \
 
+caffe install Q&A
+Q: ./include/caffe/common.hpp:84:12: error: ‘std::isnan’ has not been declared
+ using std::isnan;
+A:  https://stackoverflow.com/questions/47200632/caffe-installation-gcc-error-namespace-std-has-no-member-isnan?rq=1
+cuda8.0, caffe clone 201807, ubuntu 17.10, gcc 5.4
+Let add the following to:
+/usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h
+
+/* #undef _GLIBCXX_USE_C99_MATH */
+#define  _GLIBCXX_USE_C99_MATH  1 
+
