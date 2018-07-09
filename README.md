@@ -66,3 +66,8 @@ Let add the following to:
 /* #undef _GLIBCXX_USE_C99_MATH */
 #define  _GLIBCXX_USE_C99_MATH  1 
 
+---
+ubuntu17.10 bootdisk error nouveau 
+ nouveau 0000:01:00.0: gr: init failed, -110
+https://askubuntu.com/questions/947830/errors-from-nouveau-when-installing-or-booting-from-live-usb
+
